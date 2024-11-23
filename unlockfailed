@@ -8,7 +8,7 @@ Window = Library:Create({
 		Window:TaskBarOnly(true)
 	end,
 	KeySystem = true,
-	Key = "Prem7438343365",
+	Key = "Prem74383433654",
 	MaxAttempts = 3,
 	DiscordLink = nil,
 	ToggledRelativeYOffset = 0
