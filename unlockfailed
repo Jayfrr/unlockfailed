@@ -1,0 +1,76 @@
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Loco-CTO/UI-Library/main/VisionLibV2/source.lua'))()
+
+Window = Library:Create({
+	Name = "Erazed Premium Unlocker",
+	Footer = "",
+	ToggleKey = Enum.KeyCode.RightShift,
+	LoadedCallback = function()
+		Window:TaskBarOnly(true)
+	end,
+	KeySystem = true,
+	Key = "Prem7438343365",
+	MaxAttempts = 3,
+	DiscordLink = nil,
+	ToggledRelativeYOffset = 0
+})
+
+Window:ChangeTogglekey(Enum.KeyCode.RightShift)
+
+local Tab = Window:Tab({
+	Name = "Script Unlock",
+	Icon = "rbxassetid://11396131982",
+	Color = Color3.new(1, 0, 0)
+})
+
+local Section1 = Tab:Section({
+	Name = "Down Bellow"
+})
+
+local Button = Section1:Button({
+	Name = "Open Premium",
+	Callback = function()
+    local HttpGet = loadstring(game:HttpGet('https://raw.githubusercontent.com/Jayfrr/erazedtestbutbroken/refs/heads/main/brokenbroagains'))
+
+HttpGet()
+		Library:Notify({
+			Name = "ERAZED ON TOP INFO",
+			Text = "SUCCESFULY OPENED",
+			Icon = "rbxassetid://11401835376",
+			Duration = 3
+		})
+	end
+})
+
+
+Library:Notify({
+	Name = "Hello",
+	Text = "WELCOME",
+	Icon = "rbxassetid://11401835376",
+	Duration = 3,
+	Callback = function()
+		Library:Notify({
+			Name = "YO",
+			Text = "HAVE FUN",
+			Icon = "rbxassetid://11401835376",
+			Duration = 3,
+		})
+	end
+})
+
+local Tab = Window:Tab({
+	Name = "Gui Settings",
+	Icon = "rbxassetid://11476626403",
+	Color = Color3.new(0.474509, 0.474509, 0.474509)
+})
+
+local Section = Tab:Section({
+	Name = "Miscs"
+})
+
+local Button = Section:Button({
+	Name = "Click Me After Opened Premium",
+	Callback = function()
+		Library:Destroy()
+	end
+})
+
